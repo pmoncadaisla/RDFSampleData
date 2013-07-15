@@ -25,7 +25,7 @@ public class Main {
 			Generator g = new Generator();
 			List<Person> people = g.generateRandom(100);
 
-			RdfGenerator rdfGen = new RdfGenerator(people);
+			RdfFoafGenerator rdfGen = new RdfFoafGenerator(people);
 			for(Person p : people){
 				writeRdf("people", p.getUid(), rdfGen.generatePerson(p));
 			}

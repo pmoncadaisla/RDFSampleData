@@ -25,6 +25,10 @@ public class Skill {
 	public String getName() {
 		return name;
 	}
+	
+	public String getUid(){
+		return this.name.replaceAll("\\s","");
+	}
 	public void setName(String name) {
 		this.name = name;
 	}
