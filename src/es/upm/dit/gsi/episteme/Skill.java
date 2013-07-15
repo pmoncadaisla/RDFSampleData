@@ -1,0 +1,25 @@
+package es.upm.dit.gsi.episteme;
+
+public class Skill {
+	private String name;
+	private String level;
+	
+	public Skill(String name, String level) {
+		super();
+		this.name = name;
+		this.level = level;
+	}
+	public String getLevel() {
+		return level;
+	}
+	public void setLevel(String level) {
+		this.level = level;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}
