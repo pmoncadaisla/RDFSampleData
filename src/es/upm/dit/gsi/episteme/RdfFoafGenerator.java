@@ -19,7 +19,6 @@ public class RdfFoafGenerator {
 				"xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\n    " +
 				"xmlns:vcard=\"http://www.w3.org/2006/vcard/ns#\"\n    " +
 				"xmlns:cv=\"http://kaste.lv/~captsolo/semweb/resume/cv.rdfs#\">\n    " +
-				"xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n\n    " +
 				"<foaf:Person rdf:about=\""+endpointResource+p.getUid()+"\">\n        " +
 				"<foaf:name>"+p.getName()+"</foaf:name>\n        " +
 				"<foaf:homepage rdf:resource=\"http://www.gsi.dit.upm.es/~"+p.getUid()+"\" />\n        " +
