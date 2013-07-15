@@ -17,15 +17,10 @@ public class Generator {
 			"Navarra", "Ourense", "Palencia", "Salamanca", "Segovia", "Soria","Tarragona", "Teruel", "Valladolid",
 			"Vizcaya", "Zamora", "Zaragoza"};
 	
-	private String[] sks = {"Java", "Software Engineering", "C++", "C", "iOS", "Android", 
-			"HTML", "HTML5", "Javascript", "jQuery", "Knockout", "Sparql", "Semantic technologies", 
-			"Linux", "Social skills", "Server administration", "PHP", "Signal procesing", "Photo editing",
-			"Video rendering", "Windows", "Mobile developement", "Scrum"};
 	
 	private String[] positions = {"Full Proffesor", "Associate Proffesor", "Postgraduate Researcher",
-			"Fellow Grade", "Collaborator" };
-	
-	private String[] levels = {"Beginner", "Intermediate", "Expert"};
+			"Fellow Grade", "Collaborator" };	
+
 	
 	public List<Person> generateRandom(int number){
 		NameGenerator ng = new NameGenerator();
@@ -47,11 +42,11 @@ public class Generator {
 			String position = positions[random(0,positions.length-1)];
 			List<Skill> skills = new ArrayList<Skill>();
 			int ranking = random(100,20000);			
-			int numSkills = random(4,sks.length-1);
+			int numSkills = random(4,Skill.skills.length-1);
 			
 			for(int j = 0; j<numSkills; j++){
-				String skillName = sks[random(0,sks.length-1)];
-				String skillLevel = levels[random(0,levels.length-1)];
+				String skillName = Skill.skills[random(0,Skill.skills.length-1)];
+				String skillLevel = Skill.levels[random(0,Skill.levels.length-1)];
 				skills.add(new Skill(skillName, skillLevel));
 				
 			}

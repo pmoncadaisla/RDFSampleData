@@ -4,6 +4,13 @@ public class Skill {
 	private String name;
 	private String level;
 	
+	public static String[] skills = {"Java", "Software Engineering", "C++", "C", "iOS", "Android", 
+			"HTML", "HTML5", "Javascript", "jQuery", "Knockout", "Sparql", "Semantic technologies", 
+			"Linux", "Social skills", "Server administration", "PHP", "Signal procesing", "Photo editing",
+			"Video rendering", "Windows", "Mobile developement", "Scrum"};
+	
+	public static String[] levels = {"Beginner", "Intermediate", "Expert"};
+	
 	public Skill(String name, String level) {
 		super();
 		this.name = name;
